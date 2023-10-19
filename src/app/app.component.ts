@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModeService } from './mode.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+  count=0;
+
+  constructor(private modeService: ModeService) {}
+
+  counter(type:string){
+    type==='add'?this.count++:this.count--
+  }
+
+  toggleTheme() {
+    this.modeService.toggleTheme();
+  }
+  isDarkTheme() {
+    return this.modeService.isDarkTheme();
+  }
 }

@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+.dark-theme button {
+  background-color: white;
+  color: black;
+}
+* {
+  margin: 0;
+}
+.PageCont {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Content {
+  margin-top: 2rem;
+}
+.OneLine {
+  display: flex;
+  gap: 1rem;
+}
+.CounterCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
